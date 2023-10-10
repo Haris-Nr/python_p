@@ -1,0 +1,11 @@
+{% extends "master.html" %}
+{% block title %}
+Wrong Address
+{% endblock %}
+
+{% block content %}
+{% with error='Error'%}
+    <h1>Ooops!</h1>
+    <h2>I cannot find the file you requested!!!{{error}}</h2>
+{% endwith %}
+{% endblock %}
